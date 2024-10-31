@@ -35,7 +35,7 @@ const Home = () => {
 
           <Link to="/user">
               <Button type="primary" size="large">
-                  View List Items
+                  View List Restaurant
               </Button>
           </Link>
       </div>
