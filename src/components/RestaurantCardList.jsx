@@ -6,9 +6,8 @@ import { Empty, Spin, Pagination } from 'antd';
 const RestaurantCardList = () => {
     const { restaurants, loading } = useContext(RestaurantContext);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 6; // Ubah sesuai kebutuhan
+    const itemsPerPage = 6;
 
-    // Hitung index awal dan akhir untuk data yang ditampilkan
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = restaurants.slice(indexOfFirstItem, indexOfLastItem);
